@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="phonese" />
+            android:text="Name" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
