@@ -8,12 +8,14 @@ import com.example.a1th.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var binding = ActivityMainBinding.inflate(layoutInflater)
+        val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        with(binding){
-            btnTest.setOnClickListener {Toast.makeText(this@MainActivity,
-                "Kalo kata Gua mah",Toast.LENGTH_SHORT).show()}
+        with(binding) {
+            btnTest.setOnClickListener {
+                val enteredText = nameTextView.text.toString()
+                Toast.makeText(this@MainActivity, enteredText, Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

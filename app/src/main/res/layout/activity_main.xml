@@ -5,18 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     android:padding="16dp"
+
     tools:context=".MainActivity">
-
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/simaster"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Masuk dengan Akun UGM anda"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/nameTextView"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Name" />
+            android:text="Username"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -25,33 +46,47 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_height="100dp"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="phone" />
+            android:text="NIM"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/btnTest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/btn_test"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ghif"/>
 
-    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@null"
+        android:text="@string/btn_test"
+        android:textStyle="bold"
+        android:visibility="visible" />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="45dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lupa password?"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:background="#0000000"/>
+
 
 </LinearLayout>
