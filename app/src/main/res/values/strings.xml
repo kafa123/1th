@@ -1,9 +1,5 @@
 <resources>
-    <string name="app_name">1th</string>
-    <string name="btn_test">Masuk</string>
-    <string-array name="gender_options">
-        <item>Male</item>
-        <item>Female</item>
-    </string-array>
+    <string name="app_name">Simaster</string>
+    <string name="btn_test">masuk</string>
 
 </resources>

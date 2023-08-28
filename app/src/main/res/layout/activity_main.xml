@@ -9,30 +9,33 @@
     android:padding="16dp"
 
     tools:context=".MainActivity">
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="100pt"
         android:layout_gravity="center"
-        android:src="@drawable/simaster"></ImageView>
+        android:src="@drawable/simasteer3"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="15pt"
         android:text="Silahkan Masuk dengan Akun UGM anda"
-        android:textSize="30sp"
         android:textColor="@color/black"
-        android:layout_gravity="center"/>
+        android:textSize="8pt" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:layout_height="7pt"/>
     <LinearLayout
         android:background="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5pt"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/nameTextView"
+
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Username"
@@ -41,13 +44,15 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:id="@+id/nameTextView"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:background="@color/white"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30pt"
         android:orientation="horizontal">
 
         <TextView
@@ -65,12 +70,12 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:layout_height="20pt"/>
 
     <Button
         android:id="@+id/btnTest"
         android:layout_width="match_parent"
-        android:layout_height="73dp"
+        android:layout_height="20pt"
         android:layout_gravity="center"
         android:background="@drawable/rounded_button"
         android:backgroundTint="@null"
@@ -80,13 +85,15 @@
         <View
             android:layout_width="20dp"
             android:layout_height="45dp"/>
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lupa password?"
             android:textColor="@color/red"
             android:layout_gravity="center"
-            android:background="#0000000"/>
+            android:onClick="forgottenPW"
+            android:clickable="true"/>
+
 
 
 </LinearLayout>
